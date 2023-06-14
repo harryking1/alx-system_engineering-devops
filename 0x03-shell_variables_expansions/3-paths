@@ -1,2 +1,2 @@
 #!/bin/bash
-path="/path/to/directory";count=$(find "$path" -type d | wc -1); count=$((count-1))
+echo $(('echo $PATH | grep -0 ":/" | wc -1' + 1))
